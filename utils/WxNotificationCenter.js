@@ -62,23 +62,23 @@ function addOnceNotification(name, selector, observer) {
 }
 
 function addNotices(newNotice) {
-    // if (__notices.length > 0) {
-    //     for (var i = 0; i < __notices.length; i++) {
-    //         var hisNotice = __notices[i];
-    //         //当名称一样时进行对比，如果不是同一个 则放入数组，否则跳出
-    //         if (newNotice.name === hisNotice.name) {
-    //             if (!cmp(hisNotice, newNotice)) {
-    //                 __notices.push(newNotice);
-    //             }
-    //             return;
-    //         }else{
-    //             __notices.push(newNotice);
-    //         }
+    if (__notices.length > 0) {
+        for (var i = 0; i < __notices.length; i++) {
+            var hisNotice = __notices[i];
+            //当名称一样时进行对比，如果不是同一个 则放入数组，否则跳出
+            if (newNotice.name === hisNotice.name) {
+                if (!cmp(hisNotice, newNotice)) {
+                    __notices.push(newNotice);
+                }
+                return;
+            }else{
+                __notices.push(newNotice);
+            }
 
-    //     }
-    // } else {
+        }
+    } else {
         
-    // }
+    }
 
     __notices.push(newNotice);
 }

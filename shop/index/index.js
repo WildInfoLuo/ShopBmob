@@ -25,6 +25,7 @@ Page({
 	},
 	onLoad: function () {
 		that = this;
+		//是否有未支付订单
 		// wx.navigateTo({
 		// 	url: '../../order/checkout/checkout'
 		// });

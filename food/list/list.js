@@ -24,7 +24,7 @@ Page({
 		query.ascending('priority');
 		query.limit(Number.Max_VALUE);
 		query.find().then(function (foodObjects) {
-			// console.log(foodObjects);
+			console.log(foodObjects);
 			that.setData({
 				foodObjects: foodObjects
 			});

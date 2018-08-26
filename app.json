@@ -17,7 +17,7 @@
     ],
     "window": {
         "navigationBarBackgroundColor": "#0099ff",
-        "navigationBarTitleText": "灵犀外卖",
+        "navigationBarTitleText": "水果外卖",
         "navigationBarTextStyle": "white"
     },
     "tabBar":{

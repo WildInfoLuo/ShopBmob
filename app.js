@@ -33,7 +33,7 @@ App({
 			success: function (res) {
 				user.loginWithWeapp(res.code).then(function (user) {
 					var openid = user.get("authData").weapp.openid;
-					wx.setStorageSync('openid', openid)
+					wx.setStorageSync('openid', null)
 					wx.setStorageSync('isAdmin', user.get('isAdmin'));
 					var u = Bmob.Object.extend("_User");
 					var query = new Bmob.Query(u);
@@ -91,7 +91,7 @@ App({
 		var openId = Bmob.User.current().get('authData').weapp.openid;
 		console.log('openId:', openId);
 		//传参数金额，名称，描述,openid
-		Bmob.Pay.wechatPay(order.get('total'), '灵犀外卖', '订餐', openId).then(function (resp) {
+		Bmob.Pay.wechatPay(order.get('total'), '水果外卖', '订餐', openId).then(function (resp) {
 			console.log('resp');
 			console.log(resp);
 			//服务端返回成功
