@@ -7,18 +7,18 @@
 </view>
 <!-- 账户 -->
 <view class="account">
-	<!-- <view class="item">
+	<view class="item">
 		<view class="value balance">0.00</view>
 		<view class="caption">余额</view>
-	</view> -->
-	<!-- <view class="item">
+	</view>
+	<view class="item">
 		<view class="value coupon">0</view>
 		<view class="caption">优惠</view>
 	</view>
 	<view class="item">
 		<view class="value credit">0</view>
 		<view class="caption">积分</view>
-	</view> -->
+	</view>
 </view>
 <!-- 列表 -->
 <view class="listview">
