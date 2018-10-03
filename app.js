@@ -33,7 +33,7 @@ App({
 			success: function (res) {
 				user.loginWithWeapp(res.code).then(function (user) {
 					var openid = user.get("authData").weapp.openid;
-					wx.setStorageSync('openid', null)
+					wx.setStorageSync('openid', openid)
 					wx.setStorageSync('isAdmin', user.get('isAdmin'));
 					var u = Bmob.Object.extend("_User");
 					var query = new Bmob.Query(u);
